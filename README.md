@@ -7,5 +7,5 @@ Please see the code in the folder **Assignment 1**
 <br />
 Note: Created a styles.css file to add some simple styles and to align text, photo, and video in various columns.
 <br />
-Used <div> to enclose two different <section> tags into left and right columns.
+Used the div tag to enclose two different section tags into left and right columns.
 
