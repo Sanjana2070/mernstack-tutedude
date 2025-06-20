@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.left {
+    max-width: 50%;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #d7b9df;
+    padding: 8px;
+}
+
+.table th {
+    background-color: #eca9ef;
+    text-align: left;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form input[type="text"],
+.form input[type="number"],
+.form input[type="email"],
+.form textarea {
+    padding: 8px;
+    border: 1px solid #d7b9df;
+    border-radius: 20px;
+}
+.form button {
+    padding: 10px 20px;
+    background-color: #d7b9df;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #b300b0; /* darker purple on hover */
+}
