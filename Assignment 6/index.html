@@ -31,7 +31,8 @@
             <img src="" id="icon">
             <h4><span id="temp"></span><sup>o</sup>C</h4>
             
-            <button onclick="window.location.reload()" class="refresh">
+            <button onclick="getWeather()" class="refresh">
+
                 <i class="fa fa-refresh"></i>
             </button>
         </div>
@@ -62,6 +63,8 @@
         request.send();
 
         */
+    window.onload = getWeather;
+    function getWeather() {  // your existing fetch logic
 
     const API_KEY = "ee4dbd8bf8d5775a973720240bbff18c";
     const city = "delhi";
@@ -86,7 +89,7 @@
             console.error("Fetch error:", error);
             document.getElementById("weather").innerHTML = "Weather data unavailable.";
         });
-
+    }
     </script>
 </body>
 </html>
